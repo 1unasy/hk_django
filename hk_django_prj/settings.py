@@ -75,10 +75,22 @@ WSGI_APPLICATION = 'hk_django_prj.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/4.0/ref/settings/#databases
 
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.sqlite3',
+#         'NAME': BASE_DIR / 'db.sqlite3',
+#     }
+# }
+
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.mysql',
+
+        'NAME': 'Musinsa', # database 이름
+        'USER': 'haha', # 계정
+        'PASSWORD': '1111', # 비밀번호
+        'HOST': '3.35.137.151', # host = ip 주소
+        'PORT': '3306' # port
     }
 }
 
